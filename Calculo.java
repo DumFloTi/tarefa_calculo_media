@@ -18,8 +18,14 @@ public class Calculo {
         //Calcular a média
         double media = operadores.calcularMedia();
 
-        //Devolver a média
+        //Devolver a média, com mensagem de apoio ou felicitação, dependendo da media
         System.out.println("A média das notas é: " + media);
+        operadores.mensagemMediaZero();
+        operadores.mensagemMediaMenorQueDez();
+        operadores.mensagemMediaIgualDez();
+        operadores.mensagemMediaMaiorQueDez();
+        operadores.mensagemMediaIgualVinte();
+
         scanner.close();
     }
 
